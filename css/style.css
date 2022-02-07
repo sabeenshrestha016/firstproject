@@ -1,0 +1,90 @@
+@font-face{
+	font-family:"Rockwell Regular";
+	src: url("./../fonts/Rockwell-Regular.TTF")
+}
+
+@font-face{
+	font-family:"Rockwell Bold";
+	src: url("./../fonts/Rockwell-Bold.ttf")
+}
+@font-face{
+	font-family: "Myraidpro-Regular";
+	src: url("./../fonts/Myraidpro-Regular.OTF")
+}
+
+*{margin:0;padding:0;}
+body{font-family: 'Lato', sans-serif;background: #fff;}
+.wrapper{position: relative;overflow-x: hidden;min-height: 788px;}
+
+/*header section starts*/
+.header{position: relative;padding-bottom:30px;}
+/*header-top*/
+.header-top{background: #2e2e2e;padding: 0;height: 50px;} 
+.header-top h4{color: #fff;font-size: 18px;margin-top: 15px;font-style: italic; font-family: "Rockwell Regular";}
+.header-top h4 span{color: #265b89;}
+.header-top ul{position: relative;text-align: right; z-index: 1;padding:10px 0 7px 20px;top:13px;}
+.header-top ul::before {content: '';position:absolute;top: 0;left: 0;width: 1000%;height:100%;background: #1f81d4;transform: skew(-35deg);z-index: -1;}
+.header-top ul li{display: inline-block; color: #fff;}
+.header-top ul li:first-child{float: left; font-size:14px;}
+.header-top ul li img{margin-right:15px;}
+.header-top ul li a{text-decoration: none; color: #fff;}
+.header-top ul li a .fa{width:30px;height:30px;border:1px solid #fff;text-align: center;border-radius: 50%;font-size: 15px;padding-top:7px;margin-left: 5px	;}
+
+/*header-middle*/
+.header-middle{padding: 30px 0; background: #fff;}
+.header-middle ul{text-align: right;margin-top: 25px;}
+.header-middle ul li{position: relative;text-align:left;padding-left:70px;display: inline-block;color: #4b4b4b;font-size: 14px;font-family: 'Myraidpro-Regular';}
+.header-middle ul li span{display: block;font-family: 'Rockwell Regular';font-weight: 700;font-size: 16px;margin-bottom: 5px;}
+.header-middle ul li:first-child{margin-right: 80px;}
+
+.header-middle ul li::before{position: absolute;content:'';top: 0;left: 0;width: 50px;height: 50px;border:1px dashed #83b9e7;border-radius: 10px;border-bottom-right-radius: 0;font-family: "fontawesome";text-align: center;font-size: 25px;padding-top: 9px;}
+/*.header-middle ul li:first-child::before{content:  '\f095';}
+.header-middle ul li:last-child::before{content:  '\f041';}
+*/
+.header-middle ul li:first-child::before{content:url('../images/icon-phone.png');}
+.header-middle ul li:last-child::before{content: url('../images/icon-address.png');}
+
+/*navigation*/
+.header-bottom{position: absolute;width: 100%;left:0;bottom:-35px;}
+.header-bottom ul li{position: relative;display: inline-block; background: #2e2e2e;margin-left:-3px;z-index: 1;}
+.header-bottom ul li:last-child{float: right;background: #1f81d4;}
+.header-bottom ul li:last-child a{font-size:20px; padding: 12px 0; }
+.header-bottom ul li:nth-child(6)::before{content: '';position:absolute;top: 0;left: 20%;width:100%;height: 100%;background:#2e2e2e; transform: skewX(-20deg);z-index: -1;}
+.header-bottom ul li:last-child::before{content: '';position: absolute;top: 0;left: -5%;height: 99%;width: 100%;transform: skewX(-20deg);background: #1f81d4;z-index: -1;padding: 12px 0;}
+.header-bottom ul li a{position: relative;display: inline-block;color: #fff;text-decoration: none;font-size: 16px;text-transform: uppercase; margin: 0px 35px;padding: 15px 0;}
+.header-bottom ul li a::before{content:'';position: absolute;top: 0;left: 50%;width: 0;height: 100%;border-bottom: 3px solid #fff;transition: all linear 0.3s;}
+.header-bottom ul li a:hover::before{width: 100%;left: 0;}
+.header-bottom ul li:last-child a::before{display: none;}
+/*header section ends*/
+
+/*Banner Section Starts*/
+.banner{position: relative;}
+.banner img {width: 100%;height: auto;}
+.banner-content{position: absolute;top: 50%;left: 0;width: 100%;transform:translateY(-50%);color: #fff;}
+.banner-content h3{font-size: 72px;font-weight: 400;line-height: 90px;}
+.banner-content p{font-size:18px;font-family: 'Myraidpro-Regular';margin: 30px 0 25px;}
+.banner-content a{display: inline-block;border: 2px solid #fff;padding: 10px 30px;text-decoration:none;font-size:18px;text-transform: uppercase;color: #fff;border-radius: 50px;transition: all linear 0.3s;}
+.banner-content a:hover{background: #fff;color: #0f0f0f;}
+/*Banner Section Ends*/
+
+/*Welcome Section Starts*/
+.welcome{padding: 80px 0; background: #fff;}
+.welcome-thumbnail{padding:0 60px 0 80px;text-align: center;position: relative;z-index: 1;}
+.welcome-thumbnail img{width: 100%;}
+.welcome-thumbnail::before{content: 'Over 20 years of experience'; position: absolute;top: 44%;right: calc(50% - 27px);background: #1f81d4;transform: rotate(270deg) ;font-size: 16px;color: #fff;text-transform:uppercase;font-family: 'Myraidpro-Regular';padding: 15px;width:calc(100% - 25px);text-align: center;}/*translateY(-335%);*/
+.welcome-thumbnail::after{content: '';position: absolute;background: #1f81d4;bottom: -35px;right: 15px;height: 260px; width: 270px;z-index: -1;}
+.welcome-content{padding-left: 40px;}
+.welcome-content h4{color: #0f0f0f;font-size: 36px;font-family:"Rockwell Regular"; }
+.welcome-content h1{color: #0f0f0f;font-size: 36px;font-family:"Rockwell Regular";margin: 10px 0 30px; }
+.welcome-content h1 span{color: #1f81d4;}
+.welcome-content p{color: #646464;font-size: 16px;line-height: 32px;font-family: "Myraidpro-Regular"; text-align: justify;}
+.welcome-content .last-paragraph{font-size: 18px; margin-top:10px;color: #646464;} 
+.welcome-content .last-paragraph span{color: #1f81d4;text-transform: uppercase;}
+.welcome-content a{display:inline-block;background: #11b4f5;padding: 12px 30px;color: #fff;text-decoration: none;border-radius: 5px;margin-top: 20px;transition: all linear 0.3s;}
+.welcome-content a img{margin-left: 10px;}
+.welcome-content a:hover{background:#0f0f0f ;}
+.welcome-content .experience{float: right;margin-top: -52px;}
+/*Welcome Section Ends*/
+
+
+
